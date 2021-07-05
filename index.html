@@ -8,27 +8,71 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="/icofont/icofont.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet'>
     <style>
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+::before{
+    margin: 0;
+    padding: 0;
+}
+.nav-top a{
+    text-decoration: none;
+}
+/* .icofont-crown::before{
+    content: "\ea06"; 
+}      */
+.icofont-crown{
+    color: #00ff97;
+    font-size: 32px;
+    
+}
+.logo-text{
+    line-height: 90px;
+    transition: all 0.4s ease;
+    font-family: "Fredoka One",cursive;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #05f;
+    
+}
+.nav-top input{
+    padding-left: 3rem;
+    font-weight: 500;
+    padding-bottom: .5rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    border: 0;
+    border-radius: 30px;
+    font-size: 12px;
+    line-height: 32px;
+    width: 350px;
+    background-color: #eee;
 
+    
+}
     </style>
 </head>
 
 <body>
     <div class="main-wrapper">
         <!-- navigation top-->
-        <div>
+        <div class="nav-top">
             <a href="">
-                <i></i>
-                <span>Social</span>
+                <i class="icofont-crown"></i>
+                <span class="logo-text">Sociala</span>
             </a>
             <form action="">
-        </div>
+                <div>
+                    <i class="icofont-search"></i>
                 <input type="text" placeholder="Start typing here...."> 
-            </div>
+                </div>
         </form>
-            
+        </div>
             <a href="home.html"><i class="icofont-home"></i></a>
             
             <a href="storie.html"><i class="icofont-page"></i></a>
