@@ -11,82 +11,166 @@
     <link rel="stylesheet" href="/icofont/icofont.min.css">
     <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet'>
     <style>
-*, ::after, ::before{
-    box-sizing: border-box;
-}
-::before{
-    margin: 0;
-    padding: 0;
-}
-.nav-top a{
-    text-decoration: none;
-}
-/* .icofont-crown::before{
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        ::before {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            line-height: 1.75;
+        }
+
+        div {
+            display: block;
+        }
+
+        .nav-top {
+            width: 200px;
+            display: inline-block;
+        }
+
+        .nav-top a {
+            text-decoration: none;
+            line-height: 90px;
+            width: 280px;
+            text-align: left;
+            padding-left: 10px;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            margin-bottom: 0px;
+            white-space: nowrap;
+            outline: 0;
+            cursor: pointer;
+        }
+
+
+        /* .icofont-crown::before{
     content: "\ea06"; 
 }      */
-.icofont-crown{
-    color: #00ff97;
-    font-size: 32px;
-    
-}
-.logo-text{
-    line-height: 90px;
-    transition: all 0.4s ease;
-    font-family: "Fredoka One",cursive;
-    font-weight: 600;
-    display: inline-block;
-    font-size: 32px;
-    letter-spacing: 1px;
-    color: #05f;
-    
-}
-.nav-top input{
-    padding-left: 3rem;
-    font-weight: 500;
-    padding-bottom: .5rem;
-    padding-right: 1rem;
-    padding-top: .5rem;
-    border: 0;
-    border-radius: 30px;
-    font-size: 12px;
-    line-height: 32px;
-    width: 350px;
-    background-color: #eee;
+        .icofont-crown {
+            color: #00ff97;
+            font-size: 32px;
 
-    
-}
+        }
+
+        .logo-text {
+            line-height: 90px;
+            transition: all 0.4s ease;
+            font-family: "Fredoka One", cursive;
+            font-weight: 600;
+            display: inline-block;
+            font-size: 32px;
+            letter-spacing: 1px;
+            color: #05f;
+        }
+
+        .header-search {
+            display: inline-block;
+        }
+
+        input {
+            padding-left: 3rem;
+            font-weight: 500;
+            padding-bottom: .5rem;
+            padding-right: 1rem;
+            padding-top: .5rem;
+            border: 0;
+            border-radius: 30px;
+            font-size: 12px;
+            line-height: 32px;
+            width: 350px;
+            background-color: #eee;
+            text-rendering: auto;
+            -webkit-writing-mode: horizontal-tb;
+            color: black, white;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: 0px;
+            display: inline-block;
+            text-align: start;
+            appearance: auto;
+            cursor: text;
+            font: 400 13.3333px Arial;
+        }
+
+        .nav-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            -webkit-box-align: center;
+            align-items: center;
+            height: 96px;
+            background: #fff;
+            transition: left .25s;
+            border: 0;
+        }
+
+        .form-group i {
+            margin-top: 8px;
+            position: absolute;
+            margin-left: 20px;
+            color: #ced4da;
+        }
+
+        .menu-icon {
+            background-color: #d2e3ff;
+            border-color: #bcd5fe;
+            font-size: 25px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            color: #adb5db;
+            position: relative;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+
+        .text-current {
+            color: #05f;
+        }
     </style>
 </head>
 
 <body>
     <div class="main-wrapper">
         <!-- navigation top-->
-        <div class="nav-top">
-            <a href="">
-                <i class="icofont-crown"></i>
-                <span class="logo-text">Sociala</span>
-            </a>
-            <form action="">
-                <div>
+        <div class="nav-header">
+            <div class="nav-top">
+                <a href="index.html">
+                    <i class="icofont-crown"></i>
+                    <span class="logo-text">Sociala.</span>
+                </a>
+            </div>
+            <form action="" class="header-search">
+                <!-- Ô tìm kiếm-->
+                <div class="form-group">
                     <i class="icofont-search"></i>
-                <input type="text" placeholder="Start typing here...."> 
+                    <input type="text" placeholder="Start typing to search....">
                 </div>
-        </form>
-        </div>
-            <a href="home.html"><i class="icofont-home"></i></a>
-            
-            <a href="storie.html"><i class="icofont-page"></i></a>
-            <a href="video.html"><i class="icofont-video"></i></a>
-            <a href="user.html"><i></i></a>
-            <a href="group.html"><i></i></a>
-        </div>
+            </form>
 
-        
-        
-        
+            <a href="index.html"><i class="icofont-home menu-icon text-current"></i></a>
+            <a href="storie.html"><i class="icofont-page menu-icon"></i></a>
+            <a href="video.html"><i class="icofont-video menu-icon"></i></a>
+            <a href="group.html"><i class="icofont-user menu-icon"></i></a>
+            <a href="shop.html"><i class="icofont-box menu-icon"></i></a>
+        </div>
         <!-- navigation top-->
     </div>
-    
 </body>
 
 </html>
