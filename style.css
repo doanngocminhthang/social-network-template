@@ -15,9 +15,9 @@
 body {
   line-height: 1.75;
   background-color: #a4c3f7;
-  -webkit-text-size-adjust:100%;
-  -webkit-tap-highlight-color:transparent;
-  color:#515184;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  color: #515184;
 }
 
 div {
@@ -211,6 +211,10 @@ input {
   padding-left: 0;
   padding-right: 0;
 }
+.scroll-bar{
+    margin-left: 0;
+    overflow-y: scroll;
+}
 .nav-wrap {
   background-color: #fff;
   padding-bottom: 0.25rem;
@@ -221,22 +225,22 @@ input {
   display: block;
 }
 .nav-wrap2 {
-    background-color: #fff;
-    padding-bottom: 0.25rem;
-    padding-top: 1rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    border-radius: 15px;
-    display: block;
+  background-color: #fff;
+  padding-bottom: 0.25rem;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 15px;
+  display: block;
 }
 .nav-wrap3 {
-    background-color: #fff;
-    padding-bottom: 0.25rem;
-    padding-top: 1rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    border-radius: 15px;
-    display: block;
+  background-color: #fff;
+  padding-bottom: 0.25rem;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 15px;
+  display: block;
 }
 
 .nav-caption {
@@ -280,14 +284,13 @@ input {
   text-decoration: none;
   outline: 0;
   cursor: pointer;
-  
 }
 .navigation .nav-content ul li {
   list-style-type: none;
   list-style-image: none;
   /* list-style: none; */
 }
-.navigation .nav-content ul li a i {
+.navigation .nav-wrap ul li a i {
   font-size: 20px;
   color: #fff;
   top: 0;
@@ -299,29 +302,70 @@ input {
   display: inline-block;
   line-height: 45px;
   text-align: center;
-  
 }
+.navigation .nav-wrap2 ul li a i {
+  font-size: 20px;
+  color: #50f;
+  top: 0;
+  position: relative;
+  margin-right: 1rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  display: inline-block;
+  line-height: 45px;
+  text-align: center;
+}
+.navigation .nav-wrap3 ul li a i {
+    font-size: 20px;
+    color: #888;
+    top: 0;
+    position: relative;
+    margin-right: 1rem;
+    width: 30px;
+    height: 28px;
+    border-radius: 45px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+  }
 .navigation .nav-content ul li a span {
   font-size: 15px;
   font-weight: 600px;
   line-height: 28px;
-  color: #888;
   transition: all 0.2s ease;
   margin-right: auto;
   padding-right: 10px;
 }
-.bt1{
-    background: linear-gradient(to right, #0575e6, #021b79);
+.bt1 {
+  background: linear-gradient(to right, #0575e6, #021b79);
 }
-.bt2{
-    background: linear-gradient(to right, #e44d26, #f16529);
+.bt2 {
+  background: linear-gradient(to right, #e44d26, #f16529);
 }
-.bt3{
-    background: linear-gradient(to right, #f2994a, #f2c94c);
+.bt3 {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
 }
-.bt4{
-    background: linear-gradient(to right, #ee0979, #ff6a00);
+.bt4 {
+  background: linear-gradient(to right, #ee0979, #ff6a00);
 }
-.bt5{
-    background: linear-gradient(to right, #05f, #09f);
+.bt5 {
+  background: linear-gradient(to right, #05f, #09f);
 }
+.ico-group2 {
+  color: #1e74fd;
+  background: #fff;
+  width: 50px;
+}
+.circle-count{
+    padding: 1px 6px;
+    background-color: #fe9431;
+    color: #fff;
+    border-radius: 7px;
+    position: absolute;
+    left: 200px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 28px;
+}
+
