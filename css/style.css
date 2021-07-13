@@ -132,6 +132,7 @@ input {
   margin-left: 1rem;
   cursor: pointer;
   text-decoration: none;
+  min-width: 50px;
 }
 
 .text-current {
@@ -152,9 +153,10 @@ input {
   position: relative;
   cursor: pointer;
   text-decoration: none;
-  margin-left: 400px;
+  /* margin-left: 400px; */
   padding: 0.5rem;
   color: #1e74fd;
+  margin-left: auto;
 }
 
 .menu-icon2 .dot-count {
@@ -169,6 +171,7 @@ input {
   display: inline-block;
   font-size: 10px;
   background-color: tomato;
+  
 }
 
 .menu-icon3 {
@@ -338,6 +341,7 @@ input {
   margin-right: auto;
   padding-right: 10px;
 }
+
 .bt1 {
   background: linear-gradient(to right, #0575e6, #021b79);
 }
@@ -505,22 +509,22 @@ input {
   color: blue;
 }
 .st1 {
-  background-image: url(css/Photo/story-bg.jpg);
+  background-image: url(./Photo/story-bg.jpg);
 }
 .st2 {
-  background-image: url(css/Photo/story-bg.jpg);
+  background-image: url(./Photo/story-bg.jpg);
 }
 .st3 {
-  background-image: url(css/Photo/story-bg.jpg);
+  background-image: url(./Photo/story-bg.jpg);
 }
 .st4 {
-  background-image: url(css/Photo/story-bg.jpg);
+  background-image: url(./Photo/story-bg.jpg);
 }
 .st5 {
-  background-image: url(css/Photo/story-bg.jpg);
+  background-image: url(./Photo/story-bg.jpg);
 }
 .st6 {
-  background-image: url(css/Photo/story-bg.jpg);
+  background-image: url(./Photo/story-bg.jpg);
 }
 .icofont-pen-alt-4 {
   color: #1e74fd;
@@ -550,6 +554,10 @@ input {
   width: 30px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
+.create-post-area i{
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
 .create-post-area textarea {
   font-weight: 500px;
   color: #adb5bd;
@@ -564,6 +572,9 @@ input {
   margin: 0;
   font-family: Montserrat, sans-serif;
 }
+.create-post-area {
+  min-width: 900px;
+}
 .text-area-icon a {
   font-weight: 600;
   color: #495057;
@@ -576,6 +587,7 @@ input {
   margin-top: 0;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
+  
 }
 .more-detail {
   color: #05f;
@@ -584,6 +596,9 @@ input {
   color: #212529;
   font-size: 12px;
   font-weight: 600;
+}
+.status-post textarea{
+  padding-left: 50px;
 }
 
 .icofont-video-cam {
@@ -609,10 +624,11 @@ input {
   margin-right: 0px;
   padding-top: 15px;
 }
-.status-post{
+.status-post img{
   padding: 0;
-  margin-top: 1rem;
-  position: relative;
+  margin-top: 10px;
+  margin-left: 10px ;
+  position: absolute;
   flex: 1 1 auto;
 }
 .status-area {
@@ -625,6 +641,7 @@ input {
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  min-width: 900px;
 }
 .status-area h4 {
   font-weight: 700;
@@ -646,6 +663,9 @@ input {
   line-height: 1.4;
 }
 
+.status-area h4{
+  min-width: 80px;
+}
 .status-avata img {
   border-radius: 50%;
   width: 45px;
@@ -906,6 +926,7 @@ input {
   flex: 0 0 30%;
   max-width: 30%;
   width: 33.3333333333%;
+  min-width: 300px;
 }
 .friend-header{
   padding: 1.5rem;
@@ -917,6 +938,7 @@ input {
   color: #0575e6;
   margin-left: 80px;
 }
+
 .friend-header h4{
   color: black;
   padding-right: 12px;
@@ -927,7 +949,7 @@ input {
   display: flex;
   margin-top: 0;
   margin-bottom: 10px;
-
+  min-width: 1500px;
 }
 .accept-friend img{
   display: flex;
@@ -958,9 +980,9 @@ border-radius: 50px;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: .4px;
-  
   background: linear-gradient(#05f,#1E74FD);
   margin-left: 20px;
+  
 }
 .accept-friend-btn .delete-btn{
   font-weight: 600;
@@ -973,6 +995,7 @@ border-radius: 50px;
   line-height: 20px;
   letter-spacing: .4px;
   background: #eee;
+  
 }
 .accept-friend-btn{
   margin-bottom: 20px;
