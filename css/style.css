@@ -171,7 +171,6 @@ input {
   display: inline-block;
   font-size: 10px;
   background-color: tomato;
-  
 }
 
 .menu-icon3 {
@@ -239,7 +238,15 @@ input {
   display: block;
   margin-right: 12px;
 }
-
+.nav-content .nav-wrap ul li > a:hover span {
+  color: #05f;
+}
+.nav-content .nav-wrap2 ul li > a:hover span {
+  color: #05f;
+}
+.nav-content .nav-wrap3 ul li > a:hover span {
+  color: #05f;
+}
 .nav-wrap3 {
   background-color: #fff;
   padding-bottom: 0.25rem;
@@ -376,7 +383,6 @@ input {
   display: inline-block;
   font-size: 13px;
   line-height: 28px;
-  
 }
 .main-content {
   -webkit-box-flex: 1;
@@ -384,50 +390,41 @@ input {
   padding-left: 280px;
   padding-right: 290px;
   transition: all 0.25s;
-  background-color:  #c2c4cc;
+  background-color: #fbfcfe;
+  flex-grow: 1;
+  width: 1911px;
+}
+.middle-sidebar-bottom {
+  width: 100%;
 }
 .middle-sidebar-left {
   width: 100%;
-  padding: 20px 0 10px 0;
-  margin-left: 50px;
+  
+  
+
 }
-.row {
+.middle-sidebar-left1 {
   visibility: visible;
   overflow: visible;
   height: 100%;
-  --bs-gutter-x: 30px;
-  --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
 }
-.col-xl-8 {
-  flex: 0 0 auto;
-  width: 66.6666666667%;
-}
-.row > * {
-  max-width: 100%;
+.middle-sidebar-left2 {
+  flex: 0 0 70%;
+  max-width: 70%;
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
   padding-right: calc(var(--bs-gutter-x) / 2);
   padding-left: calc(var(--bs-gutter-x) / 2);
   margin-top: var(--bs-gutter-y);
 }
-.group-card {
-  background-color: transparent;
-  padding: 0;
-  margin-bottom: 0;
-  width: 100%;
-  border: 0;
-  box-shadow: none;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-clip: border-box;
-  border-radius: 0.25rem;
-}
+
 .owl-carousel {
   display: block;
   overflow: hidden;
@@ -440,22 +437,21 @@ input {
   position: relative;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
-  
 }
 .owl-stage {
+  transform: translate3d(0px, 0px, 0px);
   transition: all 0s ease 0s;
   width: 928px;
-  touch-action: manipulation;
   position: relative;
-  transform: translate3d(0px, 0px, 0px);
+  touch-action: manipulation;
 }
 .owl-item {
   width: auto;
   margin-right: 7px;
   touch-action: pan-y;
+  user-select: none;
   min-height: 1px;
   float: left;
-  user-select: none;
   -webkit-backface-visibility: hidden;
 }
 .card {
@@ -545,7 +541,6 @@ input {
 }
 .create-post-area a {
   color: #adb5bd;
-  
 }
 .create-post-area {
   padding-left: 1.5rem;
@@ -562,7 +557,7 @@ input {
   width: 30px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
-.create-post-area i{
+.create-post-area i {
   margin-bottom: 10px;
   padding-top: 10px;
 }
@@ -595,7 +590,6 @@ input {
   margin-top: 0;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
-  
 }
 .more-detail {
   color: #05f;
@@ -605,10 +599,10 @@ input {
   font-size: 12px;
   font-weight: 600;
 }
-.status-post{
+.status-post {
   margin-right: 23px;
 }
-.status-post textarea{
+.status-post textarea {
   padding-left: 50px;
   border: 2px solid #d5d6de;
 }
@@ -636,10 +630,10 @@ input {
   margin-right: 0px;
   padding-top: 15px;
 }
-.status-post img{
+.status-post img {
   padding: 0;
   margin-top: 10px;
-  margin-left: 10px ;
+  margin-left: 10px;
   position: absolute;
   flex: 1 1 auto;
 }
@@ -676,7 +670,7 @@ input {
   line-height: 1.4;
 }
 
-.status-area h4{
+.status-area h4 {
   min-width: 80px;
 }
 .status-avata img {
@@ -711,7 +705,6 @@ input {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: flex;
-  
 }
 .status-image {
   padding: 0.25rem;
@@ -785,6 +778,7 @@ input {
   background-color: #fff;
   background-clip: border-box;
   border-radius: 15px;
+  padding-right: 100px;
 }
 .friend-request-row2 {
   margin-bottom: 1rem;
@@ -799,13 +793,18 @@ input {
   background-clip: border-box;
   border-radius: 15px;
 }
-.friend-request-row2>.accept-friend{
+.friend-request-row2 > .accept-friend {
   background-color: #d5d6de;
   padding: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
+.friend-request-row2 > .accept-friend i {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
 .friend-request-row3 {
   margin-bottom: 1rem;
   width: 100%;
@@ -818,6 +817,26 @@ input {
   background-color: #fff;
   background-clip: border-box;
   border-radius: 15px;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+}
+.friend-request-row3 > .bg-group > img {
+  width: 100%;
+  border-radius: 20px;
+  height: 200px;
+  padding: 10px;
+  margin-top: 0;
+}
+.member-list > ul > li > a > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}
+.member-list > ul > li > a {
+  position: relative;
+  margin-left: 0;
+  display: block;
 }
 .friend-request-row4 {
   margin-bottom: 1rem;
@@ -846,8 +865,6 @@ input {
   border-radius: 15px;
 }
 
-
-
 .friend-header {
   color: #212529;
   font-weight: 700;
@@ -873,9 +890,8 @@ input {
   padding-right: 15px;
   padding-left: 15px;
   margin-top: 0.5rem;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: #fff;
-
 }
 .right-chat h4 {
   font-weight: 700;
@@ -909,17 +925,17 @@ input {
 .right-chat a {
   color: #212529;
 }
-.have-mess a{
-  font-size: 12px
+.have-mess a {
+  font-size: 12px;
 }
-.online-mess a{
-  font-size: 12px
+.online-mess a {
+  font-size: 12px;
 }
-.offline-mess a{
-  font-size: 12px
+.offline-mess a {
+  font-size: 12px;
 }
-.online-mess2 a{
-  font-size: 12px
+.online-mess2 a {
+  font-size: 12px;
 }
 .have-mess span {
   position: absolute;
@@ -943,7 +959,7 @@ input {
   background-color: #1e74fd;
   border-radius: 10rem !important;
 }
-.online-mess  span {
+.online-mess span {
   width: 8px;
   height: 8px;
   background-color: #10d876;
@@ -957,7 +973,6 @@ input {
   line-height: 25px;
   text-align: center;
   list-style: none;
-  
 }
 .offline-mess > span {
   position: absolute;
@@ -975,7 +990,7 @@ input {
   vertical-align: baseline;
   border-radius: 10rem;
 }
-.online-mess2>span{
+.online-mess2 > span {
   width: 8px;
   height: 8px;
   background-color: orange;
@@ -990,63 +1005,52 @@ input {
   text-align: center;
   list-style: none;
 }
-.middle-sidebar-right{
+.middle-sidebar-right {
   flex: 0 0 30%;
-  width: 33.3333333333%;
-  border-top: 1px solid #f1f1f1;
-  padding-left: 0px;
-  padding-bottom: 0;
-  max-width: 100%;
-  padding-right: 1.5rem;
-  padding-top: 0;
-  display: flex;
-  font-size: 12px;
-  min-width: 300px;
-  flex-direction: column;
+  max-width: 30%;
 }
-.friend-header{
+.friend-header {
   padding: 1.5rem;
   align-items: center;
   font-size: 12px;
   display: flex;
 }
-.friend-header a{
+.friend-header a {
   color: #0575e6;
   margin-left: 80px;
 }
 
-.friend-header h4{
+.friend-header h4 {
   color: black;
   padding-right: 12px;
   font-weight: 700;
   font-size: 12px;
 }
-.accept-friend{
+.accept-friend {
   display: flex;
   margin-top: 0;
   margin-bottom: 10px;
-  
 }
-.accept-friend img{
+.accept-friend img {
   display: flex;
   width: 50px;
   height: 50px;
-margin-top: 10px;
-margin-left: 20px;
-border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 50px;
 }
-.accept-friend h4{
+.accept-friend h4 {
   color: black;
   padding-right: 15px;
   font-weight: 700;
   font-size: 12px;
   margin-left: 20px;
 }
-.accept-friend span{
+.accept-friend span {
   color: #adb5bd;
   font-weight: 500;
 }
-.accept-friend-btn a{
+.accept-friend-btn a {
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -1055,25 +1059,22 @@ border-radius: 50px;
   border-radius: 30px;
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: .4px;
-  background: linear-gradient(#05f,#1E74FD);
+  letter-spacing: 0.4px;
+  background: linear-gradient(#05f, #1e74fd);
   margin-left: 20px;
-  
 }
-.accept-friend-btn .delete-btn{
+.accept-friend-btn .delete-btn {
   font-weight: 600;
   color: black;
   text-align: center;
   padding: 12px 25px 12px 25px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   border-radius: 30px;
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   background: #eee;
-  
 }
-.accept-friend-btn{
+.accept-friend-btn {
   margin-bottom: 20px;
 }
-
