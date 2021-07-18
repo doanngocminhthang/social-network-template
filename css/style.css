@@ -395,7 +395,7 @@ input {
   padding-left: 280px;
   padding-right: 290px;
   transition: all 0.25s;
-  background-color: #d5d6de;
+  background-color: #fcffff;
   flex-grow: 1;
   width: 1911px;
 }
@@ -531,22 +531,22 @@ input {
   color: blue;
 }
 .st1 {
-  background-image: url(./Photo/story-bg.jpg);
+  background-image: url(./Photo/story11.jpg);
 }
 .st2 {
-  background-image: url(./Photo/story-bg.jpg);
+  background-image: url(./Photo/story2.jpg);
 }
 .st3 {
-  background-image: url(./Photo/story-bg.jpg);
+  background-image: url(./Photo/story3.jpg);
 }
 .st4 {
-  background-image: url(./Photo/story-bg.jpg);
+  background-image: url(./Photo/story4.jpg);
 }
 .st5 {
-  background-image: url(./Photo/story-bg.jpg);
+  background-image: url(./Photo/story6.jpg);
 }
 .st6 {
-  background-image: url(./Photo/story-bg.jpg);
+  background-image: url(./Photo/story6.jpg);
 }
 .icofont-pen-alt-4 {
   color: #1e74fd;
@@ -557,7 +557,7 @@ input {
   display: inline-block;
   line-height: 35px;
   text-align: center;
-  background-color: #d5d6de !important;
+  background-color: #f5f5f5 !important;
   line-height: 35px !important;
 }
 .create-post-area img {
@@ -811,7 +811,7 @@ input {
   border-radius: 15px;
 }
 .friend-request-row2 > .accept-friend {
-  background-color: #d5d6de;
+  background-color: #eee;
   margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 0.3rem;
@@ -927,11 +927,10 @@ input {
 }
 .friend-request-row5 .event-detail1 .date-event-detail {
   background-color: #10d876;
-  padding: 1rem ; 
+  padding: 1rem;
   margin-right: 0.5rem;
   border-radius: 15px;
   margin: 0;
-  
 }
 .friend-request-row5 .event-detail1 .date-event-detail h4 {
   font-weight: 700;
@@ -956,13 +955,13 @@ input {
   margin-left: 10px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .friend-request-row5 .event-detail1 h4 span {
   font-weight: 500;
   color: #adb5bd;
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   line-height: 1.6;
   display: block;
   font-size: 10px;
@@ -982,11 +981,10 @@ input {
 }
 .friend-request-row5 .event-detail2 .date-event-detail {
   background-color: #fe9431;
-  padding: 1rem ; 
+  padding: 1rem;
   margin-right: 0.5rem;
   border-radius: 15px;
   margin: 0;
-  
 }
 .friend-request-row5 .event-detail2 .date-event-detail h4 {
   font-weight: 700;
@@ -1011,13 +1009,13 @@ input {
   margin-left: 10px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .friend-request-row5 .event-detail2 h4 span {
   font-weight: 500;
   color: #adb5bd;
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   line-height: 1.6;
   display: block;
   font-size: 10px;
@@ -1037,11 +1035,10 @@ input {
 }
 .friend-request-row5 .event-detail3 .date-event-detail {
   background-color: #0575e6;
-  padding: 1rem ; 
+  padding: 1rem;
   margin-right: 0.5rem;
   border-radius: 15px;
   margin: 0;
-  
 }
 .friend-request-row5 .event-detail3 .date-event-detail h4 {
   font-weight: 700;
@@ -1066,13 +1063,13 @@ input {
   margin-left: 10px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .friend-request-row5 .event-detail3 h4 span {
   font-weight: 500;
   color: #adb5bd;
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   line-height: 1.6;
   display: block;
   font-size: 10px;
@@ -1096,8 +1093,8 @@ input {
   background: 0 0;
   transition: all 0.25s ease;
   padding-top: calc(90px + 6px);
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 1.5rem;
   margin-top: 0.5rem;
   font-family: Montserrat, sans-serif;
   background-color: #fff;
@@ -1119,16 +1116,15 @@ input {
   color: #212529;
   font-size: 20px;
   border-radius: 50%;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
+
 .have-mess a {
   margin-left: 20px;
 }
 .right-chat li {
   position: relative;
   background-color: transparent;
-  padding-left: 0;
-  padding-right: 0;
   align-items: center;
   display: flex;
   text-decoration: none;
@@ -1337,4 +1333,61 @@ input {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: linear-gradient(transparent, #00c6ff);
+}
+.group-chat {
+  /* padding-left: 1rem; */
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  position: relative;
+}
+.group-chat h4{
+  margin-left: 0;
+}
+.group-chat ul {
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 0; */
+  margin-bottom: 0;
+}
+.group-chat ul li {
+  position: relative;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-color: transparent;
+  align-items: center;
+  /* margin-left: 15px; */
+}
+.ava-group1 {
+  background: linear-gradient(#05f, #09f);
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  display: inline-block;
+  line-height: 35px !important;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+}
+.ava-group2 {
+  background: linear-gradient(#f2994a, #f2c94c);
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  display: inline-block;
+  line-height: 35px !important;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+}
+.ava-group3 {
+  background: linear-gradient(#ee0979, #ff6a00);
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  display: inline-block;
+  line-height: 35px !important;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
 }
