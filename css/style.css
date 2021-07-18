@@ -120,8 +120,9 @@ input {
   color: #ced4da;
 }
 
-.menu-icon {
-  background-color: #d2e3ff;
+.nav-header .menu-icon {
+  color: #adb5bd;
+  background-color: #f5f5f5;
   border-color: #bcd5fe;
   font-size: 25px;
   width: 50px;
@@ -136,6 +137,7 @@ input {
   cursor: pointer;
   text-decoration: none;
   min-width: 50px;
+  font-size: 15px;
 }
 
 .text-current {
