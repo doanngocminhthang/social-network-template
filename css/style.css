@@ -208,7 +208,7 @@ input {
   top: 0;
   flex-shrink: 0;
   width: 280px;
-  height: 100vh;
+  height: 97vh;
   overflow: hidden;
   background: 0 0;
   line-height: 1.75;
@@ -1088,7 +1088,7 @@ input {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 290px;
-  height: calc(100vh - 15px);
+  height: 94vh;
   overflow: hidden;
   background: 0 0;
   transition: all 0.25s ease;
