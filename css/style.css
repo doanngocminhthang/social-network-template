@@ -30,8 +30,9 @@ div {
 }
 
 .nav-top {
-  width: 200px;
+  width: 20%;
   display: inline-block;
+  border: 1px solid red;
 }
 
 .nav-top a {
@@ -143,7 +144,10 @@ input {
 .text-current {
   color: #05f;
 }
-
+.icon-right-group {
+  margin-left: auto;
+  min-width: 259px ;
+}
 .menu-icon2 {
   background-color: white;
   border-color: #bcd5fe;
@@ -391,13 +395,13 @@ input {
 }
 .main-content {
   -webkit-box-flex: 1;
-  padding-top: 90px;
-  padding-left: 280px;
+  padding-top: 5rem;
+  padding-left: 1rem;
   padding-right: 290px;
   transition: all 0.25s;
   background-color: #fcffff;
   flex-grow: 1;
-  width: 1911px;
+  width: 100%;
 }
 .middle-sidebar-bottom {
   width: 80%;
@@ -1341,7 +1345,7 @@ input {
   padding-top: 1.5rem;
   position: relative;
 }
-.group-chat h4{
+.group-chat h4 {
   margin-left: 0;
 }
 .group-chat ul {
@@ -1391,3 +1395,83 @@ input {
   letter-spacing: 1px;
   color: white;
 }
+.time-off-group {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  color: #adb5bd;
+  padding-right: 0;
+  margin-top: 0;
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem;
+}
+.icon-group-right2{
+  display: none;
+  width: 20%;
+}
+
+/* .fa-bars{
+   position: relative;
+   width: 2.5rem;
+} */
+
+/* Responsive */
+/* heading mobile */
+@media only screen and (max-width: 1023px) {
+  .header-search {
+    display: none;
+  }
+  .nav-header .menu-icon {
+    display: none;
+  }
+  .logo-text {
+    font-size: 20px;
+  }
+  .menu-icon2 {
+    font-size: 20px;
+  }
+  .menu-icon3 {
+    font-size: 30px;
+  }
+  .icon-right-group {
+    display: none;
+  }
+  .menu-icon4{
+    margin-left: 30rem;
+    font-size: 20px;
+    padding-right: 2rem;
+  }
+  .menu-icon5{
+    font-size: 20px;
+    padding-right: 2rem;
+  }
+  .icon-group-right2{
+  display:contents ;
+}
+.nav-content{
+  display: none;
+}
+.middle-sidebar-right{
+  display: none;
+}
+.right-chat{
+  display: none;
+}
+.main-content{
+ padding-left: 0;
+
+  width: 100%;
+}
+}
+
+
+
+/* @media only screen and (max-width:px) {
+  
+} */
