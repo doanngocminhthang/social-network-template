@@ -151,6 +151,11 @@ input {
 .icon-right-group {
   margin-left: auto;
   min-width: 259px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  line-height: 3.5rem;
 }
 .menu-icon2 {
   background-color: white;
@@ -226,7 +231,7 @@ input {
   margin-right: auto;
   margin-left: auto;
 }
-}
+
 
 .scroll-bar {
   margin-left: 0;
@@ -1435,9 +1440,12 @@ input {
     width: 100%;
     padding: 0;
   }
-  .nav-top {
+  .nav-header .nav-top {
+    position: relative;
+    width: 100%;
     display: flex;
   }
+
   .header-search {
     display: none;
   }
@@ -1446,30 +1454,61 @@ input {
     display: none;
   }
   .logo-text {
-    font-size: 16px;
+    font-size: 24px;
     padding-top: 0;
     padding-bottom: 0;
     margin: 0;
-    height: 1rem;
-    width: 1rem;
+    line-height: 28px;
   }
+  .nav-header {
+    padding: 9px 15px 9px 15px;
+    height: auto;
+    position: fixed;
+    top: env(safe-area-inset-top);
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.03)!important;
+}
+  .nav-header .nav-top a {
+    line-height: 28px;
+    padding-left: 0;
+    width: auto;
+    text-align: left;
+}
   .icon-right-group {
     display: none;
   }
-  .menu-icon4 {
+  .nav-top .menu-icon4 {
+    display: inline-block;
     font-size: 20px;
-    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: .5rem;
   }
-  .menu-icon5 {
-    font-size: 20px;
-    padding-right: 1.5rem;
-  }
-  .icon-group-right2 {
-    border: 1px solid red;
+  .nav-top .menu-icon5 {
     display: flex;
-    margin-left: 26rem;
-    min-width: 170px;
+    font-size: 20px;
+    margin-right: .5rem;
   }
+  .nav-top .menu-icon4 i{
+    color: #212529;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    line-height: 45px!important;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  .nav-top .menu-icon5 i{
+    color: #212529;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
   .nav-content {
     display: none;
   }
@@ -1505,6 +1544,9 @@ input {
   }
 }
 
-@media only screen and (min-width: 1200px){
+/* @media only screen and (min-width: 1200px){
  .container{max-width: 1199px;} 
-}
+} */
+/* @media only screen and (max-width:1600px){
+  .main-content{padding-right: 0};
+} */
