@@ -1602,6 +1602,23 @@ input {
     width: 100%;
     max-width: 100%;
   }
+  .app-footer{
+    min-height: 56px;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: env(safe-area-inset-bottom);
+    background: linear-gradient(135deg,#05f,#09f);
+  }
 }
 
 @media only screen and (min-width: 1200px) {
