@@ -160,7 +160,7 @@ input {
 }
 .icon-right-group {
   margin-left: auto;
-  min-width: 259px;
+  min-width: 260px;
 }
 .menu-icon2 {
   background-color: white;
@@ -647,6 +647,7 @@ input {
 }
 .text-area-link i {
   padding-right: 10px;
+  font-size: 22px;
 }
 .text-area-link span {
   padding-right: 10px;
@@ -1491,38 +1492,76 @@ input {
 /* heading mobile */
 @media only screen and (max-width: 991.98px) {
   .nav-header {
-    display: flex;
-    width: 100%;
-    padding: 0;
+    padding: 9px 15px 9px 15px;
+    height: auto;
+    position: fixed;
+    top: env(safe-area-inset-top);
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.03)!important;
   }
   .nav-top {
     display: flex;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
   }
   .header-search {
     display: none;
   }
-
   .nav-header .menu-icon {
     display: none;
   }
   .logo-text {
-    font-size: 16px;
+    line-height: 28px;
+    font-size: 24px;
+    font-family: "Fredoka One",cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
     padding-top: 0;
     padding-bottom: 0;
     margin: 0;
-    height: 1rem;
-    width: 1rem;
   }
   .icon-right-group {
     display: none;
   }
-  .menu-icon4 {
+  .nav-top .menu-icon4 {
+    display: flex;
+    font-size: 20px;
+    padding-right: 1.5rem;
+    margin-left: auto;
+  }
+  .nav-top .menu-icon4 i{
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    display: inline-block;
+    line-height: 45px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: black;
+  }
+  .nav-top .menu-icon5 {
+    display: flex;
     font-size: 20px;
     padding-right: 1.5rem;
   }
-  .menu-icon5 {
-    font-size: 20px;
-    padding-right: 1.5rem;
+  .nav-top .menu-icon5 i{
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    display: inline-block;
+    line-height: 45px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: black;
+  }
+  .nav-top a {
+    width: auto;
+    
+    display: inline-block;
   }
   .icon-group-right2 {
     border: 1px solid red;
@@ -1568,5 +1607,13 @@ input {
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1199px;
+  }
+}
+@media only screen and (max-width: 1384px){
+  .right-chat{
+    display: none;
+  }
+  .text-area-link span{
+    display: none;
   }
 }
